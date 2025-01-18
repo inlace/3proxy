@@ -12,10 +12,10 @@ sudo nano /etc/3proxy/3proxy.cfg
 sudo nano /etc/3proxy/.proxyauth
 sudo chown root -R /etc/3proxy
 sudo chown root /usr/bin/3proxy
-sudo chmod 444 /etc/3proxy/3proxy.cfg
-sudo chmod 400 /etc/3proxy/.proxyauth
+sudo chmod 777 /etc/3proxy/3proxy.cfg
+sudo chmod 777 /etc/3proxy/.proxyauth
 sudo mkdir /var/log/3proxy
-sudo nano/etc/systemd/system/3proxy.service
+sudo nano /etc/systemd/system/3proxy.service
 sudo systemctl daemon-reload
 sudo systemctl enable 3proxy
 sudo ufw allow 3128/tcp
